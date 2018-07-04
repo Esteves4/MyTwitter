@@ -1,0 +1,43 @@
+<armazenamento.RepositorioVector>
+  <repositorio>
+    <usuario.PessoaFisica>
+      <usuario>@lesteves</usuario>
+      <seguidos/>
+      <seguidores>
+        <usuario.PessoaFisica>
+          <usuario>@lrock</usuario>
+          <seguidos>
+            <usuario.PessoaFisica reference="../../../.."/>
+          </seguidos>
+          <seguidores/>
+          <timeline>
+            <timeline.Tweet>
+              <usuario>@lesteves</usuario>
+              <mensagem>Hi</mensagem>
+            </timeline.Tweet>
+            <timeline.Tweet>
+              <usuario>@lrock</usuario>
+              <mensagem>Hello</mensagem>
+            </timeline.Tweet>
+          </timeline>
+          <ativo>true</ativo>
+          <cpf>0</cpf>
+        </usuario.PessoaFisica>
+      </seguidores>
+      <timeline>
+        <timeline.Tweet reference="../../seguidores/usuario.PessoaFisica/timeline/timeline.Tweet"/>
+      </timeline>
+      <ativo>true</ativo>
+      <cpf>0</cpf>
+    </usuario.PessoaFisica>
+    <usuario.PessoaFisica>
+      <usuario>@lucasesteves</usuario>
+      <seguidos/>
+      <seguidores/>
+      <timeline/>
+      <ativo>false</ativo>
+      <cpf>0</cpf>
+    </usuario.PessoaFisica>
+    <usuario.PessoaFisica reference="../usuario.PessoaFisica/seguidores/usuario.PessoaFisica"/>
+  </repositorio>
+</armazenamento.RepositorioVector>
